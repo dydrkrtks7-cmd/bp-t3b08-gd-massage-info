@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-noir-gold">
+    <title>공덕 마사지 블로그 | 진짜 내돈내산 후기 & 팁</title>
+    <meta name="description" content="공덕 마사지 정보 블로그. 현지인이 직접 경험한 공덕 마사지 숨은 맛집, 가격 비교, 꿀팁까지 솔직하게 공유합니다. 예약은 010-6279-0862.">
+    <meta name="keywords" content="공덕 마사지 블로그, 공덕 마사지 후기, 공덕 마사지 정보, 공덕 마사지 추천, 공덕 마사지 가격, 공덕 마사지 숨은 맛집, 공덕 마사지 잘하는 곳, 내돈내산">
+    <link rel="canonical" href="https://t3b08-gd-massage-info.vercel.app/blog">
+    <meta property="og:title" content="공덕 마사지 블로그 | 진짜 내돈내산 후기 & 팁">
+    <meta property="og:description" content="공덕에서 진짜 마사지 정보를 찾고 계신가요? 현지인이 직접 경험한 공덕 마사지 숨은 맛집, 가격 비교, 꿀팁까지 솔직하게 공유합니다.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #faf8f5;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+        a {
+            color: #b8963a;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #8a6f2a;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: #fff;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.03);
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .logo span {
+            color: #b8963a;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        nav a {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #333;
+            padding: 5px 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            color: #b8963a;
+            border-bottom-color: #b8963a;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            padding: 5px;
+        }
+        .hamburger span {
+            width: 28px;
+            height: 2px;
+            background: #333;
+            transition: all 0.3s ease;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #fff;
+                padding: 20px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+                gap: 15px;
+            }
+            nav ul.active {
+                display: flex;
+            }
+            .hamburger {
+                display: flex;
+            }
+        }
+        .hero {
+            padding: 60px 0;
+            text-align: center;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #fff;
+            margin-bottom: 60px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y="90" font-size="90" opacity="0.03">🖤</text></svg>') repeat;
+            pointer-events: none;
+        }
+        .hero .container {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+            line-height: 1.2;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+        .blog-post {
+            background: #fff;
+            border-radius: 20px;
+            padding: 50px;
+            margin-bottom: 60px;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.05);
+        }
+        .blog-post h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+            line-height: 1.3;
+        }
+        .blog-post .meta {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .blog-post .meta span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .blog-post p {
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+            color: #444;
+        }
+        .blog-post blockquote {
+            border-left: 4px solid #b8963a;
+            padding: 20px 25px;
+            margin: 30px 0;
+            background: #faf8f5;
+            border-radius: 0 10px 10px 0;
+            font-style: italic;
+            color: #555;
+        }
+        .blog-post .highlight-box {
+            background: linear-gradient(135deg, #faf8f5, #f5f0e8);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border: 1px solid #e8e0d0;
+        }
+        .blog-post .highlight-box h3 {
+            color: #b8963a;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        .blog-post ul {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        .blog-post ul li {
+            margin-bottom: 10px;
+            color: #444;
+            list-style-type: none;
+            position: relative;
+            padding-left: 20px;
+        }
+        .blog-post ul li::before {
+            content: '✦';
+            position: absolute;
+            left: 0;
+            color: #b8963a;
+        }
+        .blog-post .cta-section {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 40px 0 0;
+        }
+        .blog-post .cta-section h3 {
+            color: #b8963a;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        .blog-post .cta-section p {
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+        .blog-post .cta-section .tel-link {
+            display: inline-block;
+            background: #b8963a;
+            color: #fff;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .blog-post .cta-section .tel-link:hover {
+            background: #8a6f2a;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(184,150,58,0.3);
+        }
+        @media (max-width: 768px) {
+            .blog-post {
+                padding: 30px 20px;
+            }
+            .blog-post h2 {
+                font-size: 1.5rem;
+            }
+        }
+        footer {
+            background: #1a1a1a;
+            color: #888;
+            padding: 40px 0;
+            text-align: center;
+        }
+        footer p {
+            font-size: 0.9rem;
+        }
+    </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span>✦</span> 공덕 마사지
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="/">홈</a></li>
+                    <li><a href="/about">소개</a></li>
+                    <li><a href="/blog">블로그</a></li>
+                    <li><a href="tel:01062790862">📞 예약하기</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger" onclick="document.getElementById('nav-menu').classList.toggle('active')">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>공덕 마사지 블로그</h1>
+            <p>진짜 내돈내산 경험담, 꿀팁, 그리고 솔직한 후기만 모았어요. 너도 힐링이 필요하다면?</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <article class="blog-post">
+            <h2>공덕 마사지, 진짜 후기로 고르는 법 (내돈내산 꿀팁 대방출)</h2>
+            <div class="meta">
+                <span>📅 2025.02.15</span>
+                <span>✍️ 공덕 마사지맨</span>
+                <span>🏷️ 공덕 마사지 정보, 후기, 꿀팁</span>
+            </div>
+
+            <p>야, 형. 요즘 몸이 너무 뻐근해서 진짜 힐링이 필요하다고? 맞아, 나도 그래. 공덕에서 마사지 받아본 사람으로서 <strong>공덕 마사지 정보</strong>는 진짜 중요해. 왜냐면 가격도 천차만별이고, 잘하는 곳 찾기가 하늘의 별 따기거든. 그래서 오늘은 내가 직접 경험한 후기랑 꿀팁을 다 푼다.</p>
+
+            <p>처음에 나도 검색만 30분 했어. "공덕 마사지 추천" 쳐보면 광고글 천지고, 후기만 봐도 다 비슷비슷해 보이잖아? 근데 진짜 중요한 건 <em>현지인 추천</em>이야. 공덕역 근처에 있는 마사지샵들은 생각보다 많거든. 근데 문제는 <strong>가격 대비 퀄리티</strong>가 천지차이.</p>
+
+            <blockquote>
+                "내가 3번 실패하고 찾은 그곳... 진짜 마사지의 맛을 알려준다. 공덕 마사지 정보는 여기서 끝내자."
+            </blockquote>
+
+            <p>자, 형. 내가 알려주는 <strong>공덕 마사지 잘하는 곳</strong> 고르는 법 딱 3가지야:</p>
+
+            <ul>
+                <li><strong>첫째,</strong> 가격만 보지 마. 5만원대랑 8만원대는 천지차이야. 특히 스웨디시 마사지 받을 거면 7만원 이상은 생각해야 돼.</li>
+                <li><strong>둘째,</strong> 테라피스트의 손길을 믿어. 예약할 때 꼭 후기에서 '손맛'에 대한 얘기가 있는지 확인해 봐.</li>
+                <li><strong>셋째,</strong> 예약은 전화로 해. 요즘엔 카톡 예약도 많지만, 직접 통화하면 분위기랑 친절도를 바로 알 수 있어.</li>
+            </ul>
+
+            <div class="highlight-box">
+                <h3>🔥 공덕 마사지 가격 꿀팁</h3>
+                <p>내가 찾은 곳은 1시간에 7만원. 근데 첫 방문이면 10% 할인도 해주고, 회원가입하면 추가 5% 할인까지! 진짜 가성비 최고야. 거기다가 <strong>공덕 마사지 숨은 맛집</strong>이라 부를 만한 게, 샤워 시설도 깔끔하고 커피도 무료로 줘. 완전 럭셔리하지?</p>
+            </div>
+
+            <p>사실 나도 처음엔 반신반의했어. "에이, 다 똑같지 뭐" 하면서 갔는데, 완전 달라. 특히 <strong>공덕 마사지 후기</strong>에서 사람들이 '시원하다'는 말이 이해가 가더라고. 근육이 진짜 풀리는 느낌? 게다가 테라피스트가 나한테 꼭 맞는 부위를 콕콕 집어주니까 개꿀.</p>
+
+            <p>그리고 하나 더! <strong>공덕 마사지 정보</strong> 찾을 때 꼭 확인할 게 있어. 바로 <em>운영 시간</em>이야. 어떤 곳은 밤 10시에 문 닫는데, 어떤 곳은 새벽 1시까지 해. 나처럼 야근하고 가는 사람은 늦게까지 하는 곳이 갑이지.</p>
+
+            <p>마지막으로, 형한테만 알려주는 꿀팁 하나. 예약할 때 "블로그 보고 왔어요" 하면 서비스로 10분 더 받을 수 있는 곳도 있어. 완전 꿀팁이지? 이거면 <strong>공덕 마사지 추천</strong>은 내가 책임진다.</p>
+
+            <div class="cta-section">
+                <h3>💆 진짜 힐링이 필요하다면?</h3>
+                <p>지금 바로 예약하고, 너도 진짜 마사지의 맛을 느껴봐. 공덕 마사지 정보는 내가 다 알려줬으니까, 이제 너만의 힐링 타임을 가져보자.</p>
+                <a href="tel:01062790862" class="tel-link">📞 010-6279-0862 로 예약하기</a>
+                <p style="margin-top: 15px; font-size: 0.9rem; color: #999;">"공덕 마사지 정보, 진짜 후기, 가격 꿀팁까지 다 알려줬어. 이제 고민은 그만!"</p>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 공덕 마사지 정보 | 진짜 힐링이 필요한 당신을 위한 가이드</p>
+            <p>예약문의: <a href="tel:01062790862" style="color: #b8963a;">010-6279-0862</a></p>
+        </div>
+    </footer>
+</body>
+</html>

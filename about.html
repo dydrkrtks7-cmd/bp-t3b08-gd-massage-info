@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-noir-gold">
+    <title>공덕 마사지 정보 | 진짜 힐링이 필요한 당신을 위한 가이드</title>
+    <meta name="description" content="공덕에서 진짜 마사지 정보를 찾고 계신가요? 현지인이 추천하는 공덕 마사지 숨은 맛집부터 가격 비교까지, 솔직한 후기와 함께 알려드립니다. 예약은 010-6279-0862.">
+    <meta name="keywords" content="공덕 마사지, 공덕 마사지 정보, 공덕 마사지 추천, 공덕 마사지 가격, 공덕 마사지 후기, 공덕 마사지 숨은 맛집, 공덕 마사지 잘하는 곳">
+    <link rel="canonical" href="https://t3b08-gd-massage-info.vercel.app/">
+    <meta property="og:title" content="공덕 마사지 정보 | 진짜 힐링이 필요한 당신을 위한 가이드">
+    <meta property="og:description" content="공덕에서 진짜 마사지 정보를 찾고 계신가요? 현지인이 추천하는 공덕 마사지 숨은 맛집부터 가격 비교까지, 솔직한 후기와 함께 알려드립니다. 예약은 010-6279-0862.">
+    <meta property="og:type" content="website">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #0a0a0a;
+            color: #f5f5f0;
+            line-height: 1.6;
+        }
+        a {
+            color: #d4af37;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #e8c54a;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+            border-bottom: 1px solid #2a2a2a;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 10px 0;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #d4af37;
+        }
+        .logo span {
+            color: #f5f5f0;
+            font-weight: 300;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+        nav a {
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #b0b0b0;
+            padding: 5px 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            color: #d4af37;
+            border-bottom-color: #d4af37;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+        .hamburger span {
+            width: 30px;
+            height: 3px;
+            background-color: #d4af37;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                right: 0;
+                background-color: #1a1a1a;
+                padding: 20px;
+                gap: 15px;
+                border-bottom: 1px solid #2a2a2a;
+            }
+            nav ul.active {
+                display: flex;
+            }
+            .hero h1 {
+                font-size: 2rem !important;
+            }
+            .hero p {
+                font-size: 1rem !important;
+            }
+        }
+        .hero {
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%231a1a1a" width="1200" height="600"/><circle cx="200" cy="300" r="150" fill="%23d4af37" opacity="0.05"/><circle cx="1000" cy="150" r="200" fill="%23d4af37" opacity="0.03"/></svg>') center/cover no-repeat;
+            padding: 100px 0 60px;
+            text-align: center;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, rgba(10,10,10,0.3) 0%, rgba(10,10,10,0.8) 100%);
+        }
+        .hero .container {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #d4af37;
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            color: #c0c0c0;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        .section {
+            padding: 80px 0;
+        }
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #d4af37;
+            text-align: center;
+            margin-bottom: 50px;
+            letter-spacing: 2px;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .card {
+            background: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            border-radius: 8px;
+            padding: 30px;
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            border-color: #d4af37;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.1);
+        }
+        .card h3 {
+            font-size: 1.4rem;
+            color: #d4af37;
+            margin-bottom: 15px;
+        }
+        .card p {
+            color: #b0b0b0;
+            margin-bottom: 10px;
+        }
+        .card .price {
+            font-size: 1.2rem;
+            color: #e8c54a;
+            font-weight: 600;
+        }
+        .faq-section {
+            background: #111;
+            padding: 80px 0;
+        }
+        .faq-item {
+            background: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            border-radius: 8px;
+            padding: 20px 30px;
+            margin-bottom: 15px;
+        }
+        .faq-item h4 {
+            font-size: 1.1rem;
+            color: #d4af37;
+            margin-bottom: 8px;
+        }
+        .faq-item p {
+            color: #c0c0c0;
+        }
+        .tel-link {
+            display: inline-block;
+            background: #d4af37;
+            color: #0a0a0a;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+        .tel-link:hover {
+            background: #e8c54a;
+            color: #0a0a0a;
+            transform: scale(1.05);
+        }
+        .info-block {
+            background: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            border-radius: 8px;
+            padding: 40px;
+            margin-bottom: 40px;
+        }
+        .info-block h3 {
+            font-size: 1.6rem;
+            color: #d4af37;
+            margin-bottom: 20px;
+        }
+        .info-block p {
+            color: #c0c0c0;
+            margin-bottom: 15px;
+        }
+        .info-block ul {
+            list-style: none;
+            padding: 0;
+        }
+        .info-block ul li {
+            color: #b0b0b0;
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        .info-block ul li::before {
+            content: '•';
+            color: #d4af37;
+            position: absolute;
+            left: 0;
+        }
+        .highlight-text {
+            color: #e8c54a;
+            font-weight: 600;
+        }
+        footer {
+            background: #0d0d0d;
+            border-top: 1px solid #2a2a2a;
+            padding: 30px 0;
+            text-align: center;
+        }
+        footer p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">공덕<span>마사지</span></div>
+            <nav>
+                <ul>
+                    <li><a href="/">홈</a></li>
+                    <li><a href="/info">정보</a></li>
+                    <li><a href="/review">후기</a></li>
+                    <li><a href="/price">가격</a></li>
+                    <li><a href="/contact">문의</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>공덕 마사지 정보</h1>
+            <p>공덕에서 진짜 힐링을 찾는 당신을 위한 완벽 가이드. 현지인만 아는 숨은 정보부터 가격, 팁까지 다 알려줄게!</p>
+            <a href="tel:01062790862" class="tel-link">📞 010-6279-0862</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">공덕 마사지, 이거 하나면 끝</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>📍 공덕 마사지 핫플 리스트</h3>
+                    <p>공덕역 주변 진짜 잘하는 곳만 모았어. 내가 직접 가보고 느낀 솔직 후기야.</p>
+                    <p class="price">⭐ 추천: 테라피 온 공덕</p>
+                </div>
+                <div class="card">
+                    <h3>💰 가격 비교 한눈에</h3>
+                    <p>스웨디시 60분 7만원부터 시작. 전신 마사지 평균 9만원 정도 생각하면 돼.</p>
+                    <p class="price">💵 최저가: 70,000원~</p>
+                </div>
+                <div class="card">
+                    <h3>⏰ 예약 꿀팁</h3>
+                    <p>주말은 무조건 예약 필수! 평일 오전이 가장 한산하고 할인도 많아.</p>
+                    <p class="price">📅 카톡 예약 가능</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: #111;">
+        <div class="container">
+            <h2 class="section-title">공덕 마사지 상세 정보</h2>
+            <div class="info-block">
+                <h3>🔍 공덕 마사지, 뭐가 다를까?</h3>
+                <p>공덕은 서울의 중심이지만 왠지 모르게 조용한 동네야. 그래서 마사지샵들도 프라이빗하고 전문적인 곳이 많아. 내가 공덕에서 3년째 살면서 느낀 건, 여기 마사지샵들은 진짜 '힐링'에 집중한다는 거야.</p>
+                <p>특히 <span class="highlight-text">공덕 마사지 정보</span>를 찾는 사람들이 많아지면서, 가성비 좋은 곳들이 속속 생기고 있어. 내가 추천하는 건 공덕역 3번 출구 근처에 있는 '힐링스팟'이야. 여긴 실장님이 직접 관리해서 퀄리티가 진짜 좋아.</p>
+            </div>
+            <div class="info-block">
+                <h3>📋 마사지 종류별 특징</h3>
+                <ul>
+                    <li><strong>스웨디시 마사지</strong> - 부드럽고 리드미컬한 테크닉으로 전신 피로 회복에 최고. 60분 기준 7~9만원.</li>
+                    <li><strong>타이 마사지</strong> - 스트레칭 위주로 유연성 증가. 좀 아플 수 있지만 개운함이 끝내줘.</li>
+                    <li><strong>아로마 마사지</strong> - 향기로 힐링하고 싶다면 추천. 피부 미용에도 좋아.</li>
+                    <li><strong>발 마사지</strong> - 하루 종일 걸었다면 필수. 30분만 받아도 발이 가벼워져.</li>
+                </ul>
+            </div>
+            <div class="info-block">
+                <h3>💡 공덕 마사지 고를 때 체크리스트</h3>
+                <p>형, 내가 공덕 마사지 정보 좀 알려줄게. 샵 고를 때 이거만 확인하면 실패 없어.</p>
+                <ul>
+                    <li>✅ <strong>위치</strong>: 공덕역에서 도보 5분 이내인지 확인. 비 오는 날 진짜 중요해.</li>
+                    <li>✅ <strong>가격</strong>: 너무 싼 곳은 피해. 60분에 5만원 이하면 퀄리티 의심해봐야 해.</li>
+                    <li>✅ <strong>후기</strong>: 네이버 평점 4.5 이상이면 안심하고 가도 돼.</li>
+                    <li>✅ <strong>테라피스트</strong>: 여성/남성 테라피스트 선택 가능한지 물어봐.</li>
+                    <li>✅ <strong>할인</strong>: 첫 방문 할인이나 패키지 할인 있는 곳이 좋아.</li>
+                </ul>
+            </div>
+            <div class="info-block">
+                <h3>🗺️ 공덕 마사지 지역별 분포</h3>
+                <p>공덕은 크게 <span class="highlight-text">공덕역 상권</span>과 <span class="highlight-text">마포구청 방향</span>으로 나눠져. 공덕역 주변은 접근성이 좋아서 직장인들이 많이 찾고, 마포구청 쪽은 조용하고 아늑한 분위기의 샵들이 많아.</p>
+                <p>내 경험상 첫 방문이라면 공덕역 근처를 추천해. 샵도 많고 골라먹는 재미가 있어. 특히 '테라피 온'은 내가 단골인데, 실장님이 친절하고 마사지도 진짜 프로야.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">공덕 마사지 FAQ</h2>
+            <div class="faq-item">
+                <h4>Q: 공덕 마사지 예약 필수인가요?</h4>
+                <p>A: 웬만하면 예약하는 게 좋아. 특히 주말에는 워크인이 거의 불가능해. 전화나
+</body>
+</html>
