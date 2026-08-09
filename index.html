@@ -1,571 +1,560 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-noir-gold">
-    <title>공덕 마사지 정보 | 진짜 힐링이 필요한 당신을 위한 가이드</title>
-    <meta name="description" content="공덕에서 진짜 마사지 정보를 찾고 계신가요? 현지인이 추천하는 공덕 마사지 숨은 맛집부터 가격 비교까지, 솔직한 후기와 함께 알려드립니다. 예약은 010-6279-0862.">
-    <meta name="keywords" content="공덕 마사지, 공덕 마사지 정보, 공덕 마사지 추천, 공덕 마사지 가격, 공덕 마사지 후기, 공덕 마사지 숨은 맛집, 공덕 마사지 잘하는 곳">
-    <link rel="canonical" href="https://gongdeok-body-tip.namanavi.com/">
-    <meta property="og:title" content="공덕 마사지 정보 | 진짜 힐링이 필요한 당신을 위한 가이드">
-    <meta property="og:description" content="공덕에서 진짜 마사지 정보를 찾고 계신가요? 현지인이 추천하는 공덕 마사지 숨은 맛집부터 가격 비교까지, 솔직한 후기와 함께 알려드립니다. 예약은 010-6279-0862.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://gongdeok-body-tip.namanavi.com/">
-    <meta property="og:image" content="https://t3b08-gd-massage-info.vercel.app/og-image.jpg">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="공덕 마사지 정보 | 진짜 힐링이 필요한 당신을 위한 가이드">
-    <meta name="twitter:description" content="공덕에서 진짜 마사지 정보를 찾고 계신가요? 현지인이 추천하는 공덕 마사지 숨은 맛집부터 가격 비교까지, 솔직한 후기와 함께 알려드립니다.">
-    <script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "공덕 마사지 정보",
-  "description": "공덕 지역 마사지 정보를 제공하는 사이트입니다. 추천 마사지샵, 가격 정보, 솔직한 후기를 확인하세요.",
-  "url": "https://gongdeok-body-tip.namanavi.com/",
-  "telephone": "010-6279-0862",
-  "areaServed": "공덕",
-  "priceRange": "₩₩"
-}</script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: 'Georgia', 'Times New Roman', 'Noto Serif KR', serif;
-            background-color: #fafaf5;
-            color: #1a1a1a;
-            line-height: 1.8;
-            letter-spacing: 0.02em;
-        }
-        a {
-            color: #1a1a1a;
-            text-decoration: none;
-            border-bottom: 1px solid #c5a880;
-            transition: border-color 0.3s ease;
-        }
-        a:hover {
-            border-bottom-color: #1a1a1a;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        .container {
-            max-width: 720px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-        /* Header */
-        header {
-            padding: 72px 0 48px;
-            border-bottom: 1px solid #c5a880;
-        }
-        header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            border: none;
-        }
-        .logo span {
-            color: #c5a880;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 32px;
-        }
-        nav a {
-            font-size: 0.9rem;
-            letter-spacing: 0.06em;
-            border: none;
-        }
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-            background: none;
-            border: none;
-            padding: 8px;
-        }
-        .hamburger span {
-            display: block;
-            width: 28px;
-            height: 2px;
-            background-color: #1a1a1a;
-            transition: 0.3s;
-        }
-        /* Hero */
-        .hero {
-            padding: 120px 0 80px;
-            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 40%, #1a1a1a 100%);
-            color: #fafaf5;
-            position: relative;
-            overflow: hidden;
-        }
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(circle at 20% 50%, rgba(197, 168, 128, 0.15) 0%, transparent 70%);
-            pointer-events: none;
-        }
-        .hero .container {
-            position: relative;
-            z-index: 1;
-        }
-        .hero h1 {
-            font-size: 3.2rem;
-            font-weight: 400;
-            line-height: 1.2;
-            letter-spacing: 0.05em;
-            margin-bottom: 32px;
-        }
-        .hero h1::first-letter {
-            font-size: 4.8rem;
-            color: #c5a880;
-            float: left;
-            margin-right: 8px;
-            line-height: 1;
-        }
-        .hero p {
-            font-size: 1.1rem;
-            color: rgba(250, 250, 245, 0.8);
-            max-width: 600px;
-            line-height: 1.9;
-            letter-spacing: 0.03em;
-        }
-        .hero .cta {
-            margin-top: 48px;
-            display: inline-block;
-            padding: 16px 48px;
-            border: 1px solid #c5a880;
-            color: #fafaf5;
-            font-size: 0.9rem;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            transition: all 0.3s;
-            border-bottom: 1px solid #c5a880;
-        }
-        .hero .cta:hover {
-            background-color: #c5a880;
-            color: #1a1a1a;
-            border-color: #c5a880;
-        }
-        /* Section */
-        section {
-            padding: 80px 0;
-        }
-        section + section {
-            padding-top: 40px;
-        }
-        .section-title {
-            font-size: 2rem;
-            font-weight: 400;
-            letter-spacing: 0.06em;
-            margin-bottom: 48px;
-            padding-bottom: 16px;
-            border-bottom: 1px solid #c5a880;
-            display: inline-block;
-        }
-        .section-title::first-letter {
-            font-size: 2.8rem;
-            color: #c5a880;
-        }
-        /* About */
-        .about-content {
-            font-size: 1.05rem;
-            line-height: 2;
-        }
-        .about-content p {
-            margin-bottom: 24px;
-        }
-        .about-content p:first-child::first-letter {
-            font-size: 3.2rem;
-            color: #c5a880;
-            float: left;
-            margin-right: 6px;
-            line-height: 1;
-            font-weight: 700;
-        }
-        .about-highlight {
-            border-left: 3px solid #c5a880;
-            padding: 24px 32px;
-            margin: 32px 0;
-            background: rgba(197, 168, 128, 0.05);
-            font-style: italic;
-        }
-        /* Reviews */
-        .reviews-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 48px;
-        }
-        .review-card {
-            border-top: 1px solid #c5a880;
-            padding-top: 24px;
-        }
-        .review-card .meta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 16px;
-            font-size: 0.85rem;
-            letter-spacing: 0.04em;
-        }
-        .review-card .name {
-            font-weight: 700;
-        }
-        .review-card .date {
-            color: #666;
-        }
-        .review-card .stars {
-            color: #c5a880;
-            letter-spacing: 0.2em;
-            font-size: 1.1rem;
-        }
-        .review-card blockquote {
-            font-style: italic;
-            line-height: 1.9;
-            font-size: 0.95rem;
-            border-left: 2px solid #c5a880;
-            padding-left: 16px;
-        }
-        /* Info */
-        .info-list {
-            list-style: none;
-        }
-        .info-list li {
-            padding: 24px 0;
-            border-bottom: 1px solid rgba(26, 26, 26, 0.1);
-            display: flex;
-            gap: 24px;
-            align-items: flex-start;
-        }
-        .info-list li:last-child {
-            border-bottom: none;
-        }
-        .info-list .label {
-            min-width: 100px;
-            font-weight: 700;
-            letter-spacing: 0.06em;
-            color: #c5a880;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-        }
-        .info-list .value {
-            font-size: 1rem;
-        }
-        .phone-link {
-            font-size: 1.3rem;
-            font-weight: 700;
-            letter-spacing: 0.04em;
-            border: none;
-            color: #1a1a1a;
-        }
-        .phone-link:hover {
-            color: #c5a880;
-        }
-        /* Footer */
-        footer {
-            padding: 72px 0 48px;
-            border-top: 1px solid #c5a880;
-            margin-top: 120px;
-        }
-        footer .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 24px;
-        }
-        footer p {
-            font-size: 0.85rem;
-            letter-spacing: 0.04em;
-            color: #666;
-        }
-        footer a {
-            border: none;
-        }
-        /* Responsive */
-        @media (max-width: 768px) {
-            header {
-                padding: 48px 0 32px;
-            }
-            header .container {
-                flex-wrap: wrap;
-            }
-            nav ul {
-                display: none;
-                flex-direction: column;
-                gap: 16px;
-                padding: 24px 0;
-                width: 100%;
-            }
-            nav ul.active {
-                display: flex;
-            }
-            .hamburger {
-                display: flex;
-            }
-            .hero {
-                padding: 80px 0 56px;
-            }
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-            .hero h1::first-letter {
-                font-size: 3.6rem;
-            }
-            section {
-                padding: 48px 0;
-            }
-            .section-title {
-                font-size: 1.6rem;
-                margin-bottom: 32px;
-            }
-            .reviews-grid {
-                grid-template-columns: 1fr;
-                gap: 32px;
-            }
-            .info-list li {
-                flex-direction: column;
-                gap: 8px;
-            }
-            .info-list .label {
-                min-width: auto;
-            }
-            footer .container {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-    </style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>공덕 마사지 정보 | 진짜 힐링이 필요한 당신을 위한 가이드</title>
+ <meta name="description" content="공덕에서 진짜 마사지 정보를 찾고 계신가요? 현지인이 추천하는 공덕 마사지 숨은 맛집부터 가격 비교까지, 솔직한 후기와 함께 알려드립니다.">
+ <meta name="keywords" content="공덕 마사지, 공덕 마사지 정보, 공덕 마사지 추천, 공덕 마사지 가격, 공덕 마사지 후기, 공덕 마사지 숨은 맛집, 공덕 마사지 잘하는 곳">
+ <link rel="canonical" href="https://gongdeok-body-tip.namanavi.com/">
+ <meta property="og:title" content="공덕 마사지 정보 | 진짜 힐링이 필요한 당신을 위한 가이드">
+ <meta property="og:description" content="공덕에서 진짜 마사지 정보를 찾고 계신가요? 현지인이 추천하는 공덕 마사지 숨은 맛집부터 가격 비교까지, 솔직한 후기와 함께 알려드립니다.">
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://gongdeok-body-tip.namanavi.com/">
+ <meta property="og:image" content="https://t3b08-gd-massage-info.vercel.app/og-image.jpg">
+ <meta name="twitter:card" content="summary">
+ <meta name="twitter:title" content="공덕 마사지 정보 | 진짜 힐링이 필요한 당신을 위한 가이드">
+ <meta name="twitter:description" content="공덕에서 진짜 마사지 정보를 찾고 계신가요? 현지인이 추천하는 공덕 마사지 숨은 맛집부터 가격 비교까지, 솔직한 후기와 함께 알려드립니다.">
+ <script type="application/ld+json">{ "@context": "https://schema.org", "@type": "LocalBusiness", "name": "공덕 마사지 정보", "description": "공덕 지역 마사지 정보를 제공하는 사이트입니다.</script>
+ <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ html {
+ scroll-behavior: smooth;
+ }
+ body {
+ font-family: 'Georgia', 'Times New Roman', 'Noto Serif KR', serif;
+ background-color: #fafaf5;
+ color: #1a1a1a;
+ line-height: 1.8;
+ letter-spacing: 0.02em;
+ }
+ a {
+ color: #1a1a1a;
+ text-decoration: none;
+ border-bottom: 1px solid #c5a880;
+ transition: border-color 0.3s ease;
+ }
+ a:hover {
+ border-bottom-color: #1a1a1a;
+ }
+ img {
+ max-width: 100%;
+ height: auto;
+ }
+ .container {
+ max-width: 720px;
+ margin: 0 auto;
+ padding: 0 24px;
+ }
+ /* Header */
+ header {
+ padding: 72px 0 48px;
+ border-bottom: 1px solid #c5a880;
+ }
+ header .container {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+ .logo {
+ font-size: 1.5rem;
+ font-weight: 700;
+ letter-spacing: 0.08em;
+ text-transform: uppercase;
+ border: none;
+ }
+ .logo span {
+ color: #c5a880;
+ }
+ nav ul {
+ list-style: none;
+ display: flex;
+ gap: 32px;
+ }
+ nav a {
+ font-size: 0.9rem;
+ letter-spacing: 0.06em;
+ border: none;
+ }
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ gap: 5px;
+ cursor: pointer;
+ background: none;
+ border: none;
+ padding: 8px;
+ }
+ .hamburger span {
+ display: block;
+ width: 28px;
+ height: 2px;
+ background-color: #1a1a1a;
+ transition: 0.3s;
+ }
+ /* Hero */
+ .hero {
+ padding: 120px 0 80px;
+ background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 40%, #1a1a1a 100%);
+ color: #fafaf5;
+ position: relative;
+ overflow: hidden;
+ }
+ .hero::before {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background: radial-gradient(circle at 20% 50%, rgba(197, 168, 128, 0.15) 0%, transparent 70%);
+ pointer-events: none;
+ }
+ .hero .container {
+ position: relative;
+ z-index: 1;
+ }
+ .hero h1 {
+ font-size: 3.2rem;
+ font-weight: 400;
+ line-height: 1.2;
+ letter-spacing: 0.05em;
+ margin-bottom: 32px;
+ }
+ .hero h1::first-letter {
+ font-size: 4.8rem;
+ color: #c5a880;
+ float: left;
+ margin-right: 8px;
+ line-height: 1;
+ }
+ .hero p {
+ font-size: 1.1rem;
+ color: rgba(250, 250, 245, 0.8);
+ max-width: 600px;
+ line-height: 1.9;
+ letter-spacing: 0.03em;
+ }
+ .hero .cta {
+ margin-top: 48px;
+ display: inline-block;
+ padding: 16px 48px;
+ border: 1px solid #c5a880;
+ color: #fafaf5;
+ font-size: 0.9rem;
+ letter-spacing: 0.1em;
+ text-transform: uppercase;
+ transition: all 0.3s;
+ border-bottom: 1px solid #c5a880;
+ }
+ .hero .cta:hover {
+ background-color: #c5a880;
+ color: #1a1a1a;
+ border-color: #c5a880;
+ }
+ /* Section */
+ section {
+ padding: 80px 0;
+ }
+ section + section {
+ padding-top: 40px;
+ }
+ .section-title {
+ font-size: 2rem;
+ font-weight: 400;
+ letter-spacing: 0.06em;
+ margin-bottom: 48px;
+ padding-bottom: 16px;
+ border-bottom: 1px solid #c5a880;
+ display: inline-block;
+ }
+ .section-title::first-letter {
+ font-size: 2.8rem;
+ color: #c5a880;
+ }
+ /* About */
+ .about-content {
+ font-size: 1.05rem;
+ line-height: 2;
+ }
+ .about-content p {
+ margin-bottom: 24px;
+ }
+ .about-content p:first-child::first-letter {
+ font-size: 3.2rem;
+ color: #c5a880;
+ float: left;
+ margin-right: 6px;
+ line-height: 1;
+ font-weight: 700;
+ }
+ .about-highlight {
+ border-left: 3px solid #c5a880;
+ padding: 24px 32px;
+ margin: 32px 0;
+ background: rgba(197, 168, 128, 0.05);
+ font-style: italic;
+ }
+ /* Reviews */
+ .reviews-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 48px;
+ }
+ .review-card {
+ border-top: 1px solid #c5a880;
+ padding-top: 24px;
+ }
+ .review-card .meta {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-bottom: 16px;
+ font-size: 0.85rem;
+ letter-spacing: 0.04em;
+ }
+ .review-card .name {
+ font-weight: 700;
+ }
+ .review-card .date {
+ color: #666;
+ }
+ .review-card .stars {
+ color: #c5a880;
+ letter-spacing: 0.2em;
+ font-size: 1.1rem;
+ }
+ .review-card blockquote {
+ font-style: italic;
+ line-height: 1.9;
+ font-size: 0.95rem;
+ border-left: 2px solid #c5a880;
+ padding-left: 16px;
+ }
+ /* Info */
+ .info-list {
+ list-style: none;
+ }
+ .info-list li {
+ padding: 24px 0;
+ border-bottom: 1px solid rgba(26, 26, 26, 0.1);
+ display: flex;
+ gap: 24px;
+ align-items: flex-start;
+ }
+ .info-list li:last-child {
+ border-bottom: none;
+ }
+ .info-list .label {
+ min-width: 100px;
+ font-weight: 700;
+ letter-spacing: 0.06em;
+ color: #c5a880;
+ font-size: 0.85rem;
+ text-transform: uppercase;
+ }
+ .info-list .value {
+ font-size: 1rem;
+ }
+ .phone-link {
+ font-size: 1.3rem;
+ font-weight: 700;
+ letter-spacing: 0.04em;
+ border: none;
+ color: #1a1a1a;
+ }
+ .phone-link:hover {
+ color: #c5a880;
+ }
+ /* Footer */
+ footer {
+ padding: 72px 0 48px;
+ border-top: 1px solid #c5a880;
+ margin-top: 120px;
+ }
+ footer .container {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-wrap: wrap;
+ gap: 24px;
+ }
+ footer p {
+ font-size: 0.85rem;
+ letter-spacing: 0.04em;
+ color: #666;
+ }
+ footer a {
+ border: none;
+ }
+ /* Responsive */
+ @media (max-width: 768px) {
+ header {
+ padding: 48px 0 32px;
+ }
+ header .container {
+ flex-wrap: wrap;
+ }
+ nav ul {
+ display: none;
+ flex-direction: column;
+ gap: 16px;
+ padding: 24px 0;
+ width: 100%;
+ }
+ nav ul.active {
+ display: flex;
+ }
+ .hamburger {
+ display: flex;
+ }
+ .hero {
+ padding: 80px 0 56px;
+ }
+ .hero h1 {
+ font-size: 2.2rem;
+ }
+ .hero h1::first-letter {
+ font-size: 3.6rem;
+ }
+ section {
+ padding: 48px 0;
+ }
+ .section-title {
+ font-size: 1.6rem;
+ margin-bottom: 32px;
+ }
+ .reviews-grid {
+ grid-template-columns: 1fr;
+ gap: 32px;
+ }
+ .info-list li {
+ flex-direction: column;
+ gap: 8px;
+ }
+ .info-list .label {
+ min-width: auto;
+ }
+ footer .container {
+ flex-direction: column;
+ text-align: center;
+ }
+ }
+ </style>
+ <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <a href="#" class="logo">공덕 <span>마사지</span></a>
-            <button class="hamburger" aria-label="메뉴 열기" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <nav>
-                <ul id="nav-menu">
-                    <li><a href="#about">소개</a></li>
-                    <li><a href="#reviews">후기</a></li>
-                    <li><a href="#info">정보</a></li>
-                    <li><a href="tel:010-6279-0862">전화</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+ <header>
+ <div class="container">
+ <a href="#" class="logo">공덕 <span>마사지</span></a>
+ <button class="hamburger" aria-label="메뉴 열기" onclick="toggleMenu()">
+ 
+ 
+ 
+ </button>
+ <nav>
+ <ul id="nav-menu">
+ <li><a href="#about">소개</a></li>
+ <li><a href="#reviews">후기</a></li>
+ <li><a href="#info">정보</a></li>
+ 
+ </ul>
+ </nav>
+ </div>
+ </header>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h1>공덕 마사지,<br>진짜 정보를 찾다</h1>
-                <p>아무 데나 가서 돈 날리지 마세요. 현지인이 직접 발로 뛰고 몸으로 느낀 공덕 마사지 정보를 솔직하게 공유합니다. 가격, 분위기, 손맛까지 — 다 알려드릴게요.</p>
-                <a href="tel:010-6279-0862" class="cta">예약 문의</a>
-            </div>
-        </section>
+ <main>
+ <section class="hero">
+ <div class="container">
+ <h1>공덕 마사지,<br>진짜 정보를 찾다</h1>
+ <p>아무 데나 가서 돈 날리지 마세요. 현지인이 직접 발로 뛰고 몸으로 느낀 공덕 마사지 정보를 솔직하게 공유합니다. 가격, 분위기, 손맛까지 — 다 알려드릴게요.</p>
+ 
+ </div>
+ </section>
 
-        <section id="about">
-            <div class="container">
-                <h2 class="section-title">왜 이 정보를 믿어야 하냐면</h2>
-                <div class="about-content">
-                    <p>공덕에서 산 지도 벌써 5년째예요. 처음엔 그냥 직장 다니기 편해서 왔는데, 어느 순간 이 동네가 제 삶의 일부가 됐더라고요. 마사지도 마찬가지였어요. 일에 치여 쌓인 피로를 풀려고 여기저기 다녀보니까, 가격만 비싸고 별로인 곳이 정말 많더라고요. 그래서 시작했어요. 직접 가보고, 느끼고, 기록하는 거. 이 사이트는 그런 제 경험의 결과물이에요.</p>
-                    <div class="about-highlight">
-                        "돈 주고도 후회하는 마사지, 이제 그만하고 싶다면? 내가 추천하는 곳은 진짜 다릅니다. 손끝의 온기가 몸을 녹이고, 마음까지 편안해지는 경험 — 그게 진짜 마사지죠."
-                    </div>
-                    <p>이 페이지는 그냥 정보 나열이 아니에요. 마치 친구에게 '야, 여기 괜찮더라' 하고 알려주는 느낌으로 썼어요. 가격대, 분위기, 그리고 가장 중요한 '손맛'까지. 당신이 공덕에서 진짜 힐링을 찾는 데 도움이 되길 바랍니다. 궁금한 건 언제든 전화 주세요.</p>
-                </div>
-            </div>
-        </section>
+ <section id="about">
+ <div class="container">
+ <h2 class="section-title">왜 이 정보를 믿어야 하냐면</h2>
+ <div class="about-content">
+ <p>공덕에서 산 지도 벌써 5년째예요. 처음엔 그냥 직장 다니기 편해서 왔는데, 어느 순간 이 동네가 제 삶의 일부가 됐더라고요. 마사지도 마찬가지였어요. 일에 치여 쌓인 피로를 풀려고 여기저기 다녀보니까, 가격만 비싸고 별로인 곳이 정말 많더라고요. 그래서 시작했어요. 직접 가보고, 느끼고, 기록하는 거. 이 사이트는 그런 제 경험의 결과물이에요.</p>
+ <div class="about-highlight">
+ "돈 주고도 후회하는 마사지, 이제 그만하고 싶다면? 내가 추천하는 곳은 진짜 다릅니다. 손끝의 온기가 몸을 녹이고, 마음까지 편안해지는 경험 — 그게 진짜 마사지죠."
+ </div>
+ <p>이 페이지는 그냥 정보 나열이 아니에요. 마치 친구에게 '야, 여기 괜찮더라' 하고 알려주는 느낌으로 썼어요. 가격대, 분위기, 그리고 가장 중요한 '손맛'까지. 당신이 공덕에서 진짜 힐링을 찾는 데 도움이 되길 바랍니다. 궁금한 건 언제든 전화 주세요.</p>
+ </div>
+ </div>
+ </section>
 
-        <section id="reviews">
-            <div class="container">
-                <h2 class="section-title">솔직한 후기, 있는 그대로</h2>
-                <div class="reviews-grid">
-                    <div class="review-card">
-                        <div class="meta">
-                            <span class="name">김민수</span>
-                            <span class="date">2024.12.15</span>
-                        </div>
-                        <div class="stars">★★★★★</div>
-                        <blockquote>"와, 진짜 손맛이 달라요. 다른 데서 받은 마사지는 그냥 '주무르기' 수준이었는데, 여기는 몸이 풀리는 게 느껴져요. 다음 주에도 또 예약했어요."</blockquote>
-                    </div>
-                    <div class="review-card">
-                        <div class="meta">
-                            <span class="name">이지은</span>
-                            <span class="date">2024.11.28</span>
-                        </div>
-                        <div class="stars">★★★★☆</div>
-                        <blockquote>"분위기가 아늑하고 조용해서 좋았어요. 가격도 부담 없고. 별 하나 뺀 건 아쉽게도 예약이 꽉 차서 원하는 시간에 못 갔거든요. 그래도 강추!"</blockquote>
-                    </div>
-                    <div class="review-card">
-                        <div class="meta">
-                            <span class="name">박준호</span>
-                            <span class="date">2024.10.10</span>
-                        </div>
-                        <div class="stars">★★★★★</div>
-                        <blockquote>"회사 후배가 추천해줘서 갔는데, 대만족. 특히 어깨랑 목이 너무 뻐근했는데 시원하게 풀어주더라고요. 앞으로 단골 될 것 같아요."</blockquote>
-                    </div>
-                    <div class="review-card">
-                        <div class="meta">
-                            <span class="name">최유나</span>
-                            <span class="date">2024.09.22</span>
-                        </div>
-                        <div class="stars">★★★★★</div>
-                        <blockquote>"진짜 힐링하고 싶을 때 가는 곳이에요. 실내 인테리어도 감각적이고, 관리사님 손길이 정말 섬세해요. 공덕에서 이만한 곳 찾기 힘들어요."</blockquote>
-                    </div>
-                </div>
-            </div>
-        </section>
+ <section id="reviews">
+ <div class="container">
+ <h2 class="section-title">솔직한 후기, 있는 그대로</h2>
+ <div class="reviews-grid">
+ <div class="review-card">
+ <div class="meta">
+ <span class="name">김민수</span>
+ <span class="date">2024.12.15</span>
+ </div>
+ <div class="stars">★★★★★</div>
+ <blockquote>"와, 진짜 손맛이 달라요. 다른 데서 받은 마사지는 그냥 '주무르기' 수준이었는데, 여기는 몸이 풀리는 게 느껴져요. 다음 주에도 또 예약했어요."</blockquote>
+ </div>
+ <div class="review-card">
+ <div class="meta">
+ <span class="name">이지은</span>
+ <span class="date">2024.11.28</span>
+ </div>
+ <div class="stars">★★★★☆</div>
+ <blockquote>"분위기가 아늑하고 조용해서 좋았어요. 가격도 부담 없고. 별 하나 뺀 건 아쉽게도 예약이 꽉 차서 원하는 시간에 못 갔거든요. 그래도 강추!"</blockquote>
+ </div>
+ <div class="review-card">
+ <div class="meta">
+ <span class="name">박준호</span>
+ <span class="date">2024.10.10</span>
+ </div>
+ <div class="stars">★★★★★</div>
+ <blockquote>"회사 후배가 추천해줘서 갔는데, 대만족. 특히 어깨랑 목이 너무 뻐근했는데 시원하게 풀어주더라고요. 앞으로 단골 될 것 같아요."</blockquote>
+ </div>
+ <div class="review-card">
+ <div class="meta">
+ <span class="name">최유나</span>
+ <span class="date">2024.09.22</span>
+ </div>
+ <div class="stars">★★★★★</div>
+ <blockquote>"진짜 힐링하고 싶을 때 가는 곳이에요. 실내 인테리어도 감각적이고, 관리사님 손길이 정말 섬세해요. 공덕에서 이만한 곳 찾기 힘들어요."</blockquote>
+ </div>
+ </div>
+ </div>
+ </section>
 
-        <section id="info">
-            <div class="container">
-                <h2 class="section-title">알아두면 쓸데있는 정보</h2>
-                <ul class="info-list">
-                    <li>
-                        <span class="label">가격대</span>
-                        <span class="value">기본 60분 코스 5~7만원, 스페셜 코스 9~12만원. 가성비 괜찮은 편이에요.</span>
-                    </li>
-                    <li>
-                        <span class="label">추천 코스</span>
-                        <span class="value">전신 마사지 + 스톤 테라피 조합. 개인적으로 가장 만족했어요. 피로가 싹 풀립니다.</span>
-                    </li>
-                    <li>
-                        <span class="label">예약 팁</span>
-                        <span class="value">주말은 항상 자리 없어요. 평일 오전이나 늦은 오후가 가장 한가하니 참고하세요.</span>
-                    </li>
-                    <li>
-                        <span class="label">전화 문의</span>
-                        <span class="value"><a href="tel:010-6279-0862" class="phone-link">010-6279-0862</a><br>바로 연결되니까 부담 갖지 말고 전화 주세요.</span>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </main>
+ <section id="info">
+ <div class="container">
+ <h2 class="section-title">알아두면 쓸데있는 정보</h2>
+ <ul class="info-list">
+ <li>
+ <span class="label">가격대</span>
+ <span class="value">기본 60분 코스 5~7만원, 스페셜 코스 9~12만원. 가성비 괜찮은 편이에요.</span>
+ </li>
+ <li>
+ <span class="label">추천 코스</span>
+ <span class="value">전신 마사지 + 스톤 테라피 조합. 개인적으로 가장 만족했어요. 피로가 싹 풀립니다.</span>
+ </li>
+ <li>
+ <span class="label">예약 팁</span>
+ <span class="value">주말은 항상 자리 없어요. 평일 오전이나 늦은 오후가 가장 한가하니 참고하세요.</span>
+ </li>
+ <li>
+ <span class="label">전화 문의</span>
+ <span class="value"><br>바로 연결되니까 부담 갖지 말고 전화 주세요.</span>
+ </li>
+ </ul>
+ </div>
+ </section>
+ </main>
 
-    
+ 
 
 
 <!-- PBN Recent Posts Feed Section -->
 <section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
-  <div style="max-width:1100px;margin:0 auto">
-    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
-      
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-15">2026-06-15</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">박스 한 겹이 만드는 스티치 값, 이걸 몰면 공덕 마사지 정보보다 손해다</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">nike, sb dunk low, paris, box detail, texture, 2003 vs 2021, sneakerbox, elite, 1.4 아, 진짜... 이 박스를 만질 때마다 공덕 마사지 정보만큼이나 신경 써야 하는 게 있더라고요. 2003 년 파리판과 </p>
-      </div>
-      <a href="posts/checklist-001-1679yv7.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">애니 작화 마니아들이 강력히 추천하는 화곡 셔츠룸 스페셜 아카이브</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/juice-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">애니 작화 마니아들이 강력히 추천하는 화곡 셔츠룸 스페셜 아카이브</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/juice-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-15">2026-06-15</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">절판된 확장팩 살려고 했는데, 공덕 마사지 정보만큼 변수가 많다는 거다</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">boardgame,gloomhaven,cards,vintage,tabletop,rpg,action,(gloomhaven:1.5),(card:condition:(mint: 함께 보면 좋은 정보 관련 업계 트렌드와 통계는 tokyo-fiber에 정리되어 있습니다. 자세한 </p>
-      </div>
-      <a href="posts/myth-002-rs5b5u.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">90년대 셀 애니메이션 작화의 한계와 이와 관련된 아날로그 특수 효과의 역사</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/normal-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">판타지 애니 설정 속 북유럽 세계수(Yggdrasil) 전승의 변형 패턴 고찰</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/normal-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">전설적인 애니메이터들의 타이밍 미학: 리미티드 3코마 작화법의 운동학</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/normal-3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    </div>
-  </div>
+ <div style="max-width:1100px;margin:0 auto">
+ <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+ <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+ 
+ <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+ <div>
+ <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+ <span>⭐ REVIEW</span>
+ <time datetime="2026-06-15">2026-06-15</time>
+ </div>
+ <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">박스 한 겹이 만드는 스티치 값, 이걸 몰면 공덕 마사지 정보보다 손해다</h4>
+ <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">nike, sb dunk low, paris, box detail, texture, 2003 vs 2021, sneakerbox, elite, 1.4 아, 진짜.. 이 박스를 만질 때마다 공덕 마사지 정보만큼이나 신경 써야 하는 게 있더라고요. 2003 년 파리판과 </p>
+ </div>
+ <a href="posts/checklist-001-1679yv7.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+ </article>
+ <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+ <div>
+ <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+ <span>⭐ REVIEW</span>
+ <time datetime="2026-05-24">2026-05-24</time>
+ </div>
+ <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">애니 작화 마니아들이 강력히 추천하는 화곡 셔츠룸 스페셜 아카이브</h4>
+ 
+ </div>
+ <a href="posts/juice-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+ </article>
+ <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+ <div>
+ <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+ <span>⭐ REVIEW</span>
+ <time datetime="2026-05-24">2026-05-24</time>
+ </div>
+ <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">애니 작화 마니아들이 강력히 추천하는 화곡 셔츠룸 스페셜 아카이브</h4>
+ 
+ </div>
+ <a href="posts/juice-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+ </article>
+ <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+ <div>
+ <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+ <span>⭐ REVIEW</span>
+ <time datetime="2026-06-15">2026-06-15</time>
+ </div>
+ <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">절판된 확장팩 살려고 했는데, 공덕 마사지 정보만큼 변수가 많다는 거다</h4>
+ <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">boardgame,gloomhaven,cards,vintage,tabletop,rpg,action,(gloomhaven:1.5),(card:condition:(mint: 함께 보면 좋은 정보 관련 업계 트렌드와 통계는 tokyo-fiber에 정리되어 있습니다. 자세한 </p>
+ </div>
+ <a href="posts/myth-002-rs5b5u.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+ </article>
+ <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+ <div>
+ <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+ <span>⭐ REVIEW</span>
+ <time datetime="2026-05-24">2026-05-24</time>
+ </div>
+ <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">90년대 셀 애니메이션 작화의 한계와 이와 관련된 아날로그 특수 효과의 역사</h4>
+ 
+ </div>
+ <a href="posts/normal-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+ </article>
+ <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+ <div>
+ <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+ <span>⭐ REVIEW</span>
+ <time datetime="2026-05-24">2026-05-24</time>
+ </div>
+ <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">판타지 애니 설정 속 북유럽 세계수(Yggdrasil) 전승의 변형 패턴 고찰</h4>
+ 
+ </div>
+ <a href="posts/normal-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+ </article>
+ <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+ <div>
+ <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+ <span>⭐ REVIEW</span>
+ <time datetime="2026-05-24">2026-05-24</time>
+ </div>
+ <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">전설적인 애니메이터들의 타이밍 미학: 리미티드 3코마 작화법의 운동학</h4>
+ 
+ </div>
+ <a href="posts/normal-3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+ </article>
+ </div>
+ </div>
 </section>
 <footer>
-        <div class="container">
-            <p>&copy; 2025 공덕 마사지 정보. All rights reserved. Made with care in Gongdeok.</p>
-            <p>문의: <a href="tel:010-6279-0862">010-6279-0862</a> | <a href="https://t3b08-gd-massage-info.vercel.app/">t3b08-gd-massage-info.vercel.app</a></p>
-        </div>
-    </footer>
+ <div class="container">
+ <p>&copy; 2025 공덕 마사지 정보. All rights reserved. Made with care in Gongdeok.</p>
+ <p>문의: | <a href="https://t3b08-gd-massage-info.vercel.app/">t3b08-gd-massage-info.vercel.app</a></p>
+ </div>
+ </footer>
 
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('nav-menu');
-            menu.classList.toggle('active');
-        }
-    </script>
+ <script>
+ function toggleMenu() {
+ const menu = document.getElementById('nav-menu');
+ menu.classList.toggle('active');
+ }
+ </script>
 </body>
 </html>

@@ -1,397 +1,395 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-noir-gold">
-    <title>공덕 마사지 정보 | 진짜 힐링이 필요한 당신을 위한 가이드</title>
-    <meta name="description" content="공덕에서 진짜 마사지 정보를 찾고 계신가요? 현지인이 추천하는 공덕 마사지 숨은 맛집부터 가격 비교까지, 솔직한 후기와 함께 알려드립니다. 예약은 010-6279-0862.">
-    <meta name="keywords" content="공덕 마사지, 공덕 마사지 정보, 공덕 마사지 추천, 공덕 마사지 가격, 공덕 마사지 후기, 공덕 마사지 숨은 맛집, 공덕 마사지 잘하는 곳">
-    <link rel="canonical" href="https://gongdeok-body-tip.namanavi.com/about.html">
-    <meta property="og:title" content="공덕 마사지 정보 | 진짜 힐링이 필요한 당신을 위한 가이드">
-    <meta property="og:description" content="공덕에서 진짜 마사지 정보를 찾고 계신가요? 현지인이 추천하는 공덕 마사지 숨은 맛집부터 가격 비교까지, 솔직한 후기와 함께 알려드립니다. 예약은 010-6279-0862.">
-    <meta property="og:type" content="website">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background-color: #0a0a0a;
-            color: #f5f5f0;
-            line-height: 1.6;
-        }
-        a {
-            color: #d4af37;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        a:hover {
-            color: #e8c54a;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        header {
-            background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
-            border-bottom: 1px solid #2a2a2a;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            padding: 10px 0;
-        }
-        header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            letter-spacing: 2px;
-            color: #d4af37;
-        }
-        .logo span {
-            color: #f5f5f0;
-            font-weight: 300;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 30px;
-        }
-        nav a {
-            font-size: 0.95rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #b0b0b0;
-            padding: 5px 0;
-            border-bottom: 2px solid transparent;
-            transition: all 0.3s ease;
-        }
-        nav a:hover {
-            color: #d4af37;
-            border-bottom-color: #d4af37;
-        }
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 5px;
-        }
-        .hamburger span {
-            width: 30px;
-            height: 3px;
-            background-color: #d4af37;
-            border-radius: 2px;
-            transition: all 0.3s ease;
-        }
-        @media (max-width: 768px) {
-            .hamburger {
-                display: flex;
-            }
-            nav ul {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 60px;
-                left: 0;
-                right: 0;
-                background-color: #1a1a1a;
-                padding: 20px;
-                gap: 15px;
-                border-bottom: 1px solid #2a2a2a;
-            }
-            nav ul.active {
-                display: flex;
-            }
-            .hero h1 {
-                font-size: 2rem !important;
-            }
-            .hero p {
-                font-size: 1rem !important;
-            }
-        }
-        .hero {
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%231a1a1a" width="1200" height="600"/><circle cx="200" cy="300" r="150" fill="%23d4af37" opacity="0.05"/><circle cx="1000" cy="150" r="200" fill="%23d4af37" opacity="0.03"/></svg>') center/cover no-repeat;
-            padding: 100px 0 60px;
-            text-align: center;
-            position: relative;
-        }
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(180deg, rgba(10,10,10,0.3) 0%, rgba(10,10,10,0.8) 100%);
-        }
-        .hero .container {
-            position: relative;
-            z-index: 1;
-        }
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-            color: #d4af37;
-            margin-bottom: 20px;
-            letter-spacing: 3px;
-        }
-        .hero p {
-            font-size: 1.3rem;
-            color: #c0c0c0;
-            max-width: 700px;
-            margin: 0 auto 30px;
-        }
-        .section {
-            padding: 80px 0;
-        }
-        .section-title {
-            font-size: 2.2rem;
-            font-weight: 700;
-            color: #d4af37;
-            text-align: center;
-            margin-bottom: 50px;
-            letter-spacing: 2px;
-        }
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        .card {
-            background: #1a1a1a;
-            border: 1px solid #2a2a2a;
-            border-radius: 8px;
-            padding: 30px;
-            transition: all 0.3s ease;
-        }
-        .card:hover {
-            border-color: #d4af37;
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.1);
-        }
-        .card h3 {
-            font-size: 1.4rem;
-            color: #d4af37;
-            margin-bottom: 15px;
-        }
-        .card p {
-            color: #b0b0b0;
-            margin-bottom: 10px;
-        }
-        .card .price {
-            font-size: 1.2rem;
-            color: #e8c54a;
-            font-weight: 600;
-        }
-        .faq-section {
-            background: #111;
-            padding: 80px 0;
-        }
-        .faq-item {
-            background: #1a1a1a;
-            border: 1px solid #2a2a2a;
-            border-radius: 8px;
-            padding: 20px 30px;
-            margin-bottom: 15px;
-        }
-        .faq-item h4 {
-            font-size: 1.1rem;
-            color: #d4af37;
-            margin-bottom: 8px;
-        }
-        .faq-item p {
-            color: #c0c0c0;
-        }
-        .tel-link {
-            display: inline-block;
-            background: #d4af37;
-            color: #0a0a0a;
-            padding: 12px 30px;
-            border-radius: 50px;
-            font-weight: 700;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            margin-top: 20px;
-        }
-        .tel-link:hover {
-            background: #e8c54a;
-            color: #0a0a0a;
-            transform: scale(1.05);
-        }
-        .info-block {
-            background: #1a1a1a;
-            border: 1px solid #2a2a2a;
-            border-radius: 8px;
-            padding: 40px;
-            margin-bottom: 40px;
-        }
-        .info-block h3 {
-            font-size: 1.6rem;
-            color: #d4af37;
-            margin-bottom: 20px;
-        }
-        .info-block p {
-            color: #c0c0c0;
-            margin-bottom: 15px;
-        }
-        .info-block ul {
-            list-style: none;
-            padding: 0;
-        }
-        .info-block ul li {
-            color: #b0b0b0;
-            padding: 8px 0;
-            padding-left: 20px;
-            position: relative;
-        }
-        .info-block ul li::before {
-            content: '•';
-            color: #d4af37;
-            position: absolute;
-            left: 0;
-        }
-        .highlight-text {
-            color: #e8c54a;
-            font-weight: 600;
-        }
-        footer {
-            background: #0d0d0d;
-            border-top: 1px solid #2a2a2a;
-            padding: 30px 0;
-            text-align: center;
-        }
-        footer p {
-            color: #666;
-            font-size: 0.9rem;
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>공덕 마사지 정보 | 진짜 힐링이 필요한 당신을 위한 가이드</title>
+ <meta name="description" content="공덕에서 진짜 마사지 정보를 찾고 계신가요? 현지인이 추천하는 공덕 마사지 숨은 맛집부터 가격 비교까지, 솔직한 후기와 함께 알려드립니다.">
+ <meta name="keywords" content="공덕 마사지, 공덕 마사지 정보, 공덕 마사지 추천, 공덕 마사지 가격, 공덕 마사지 후기, 공덕 마사지 숨은 맛집, 공덕 마사지 잘하는 곳">
+ <link rel="canonical" href="https://gongdeok-body-tip.namanavi.com/about.html">
+ <meta property="og:title" content="공덕 마사지 정보 | 진짜 힐링이 필요한 당신을 위한 가이드">
+ <meta property="og:description" content="공덕에서 진짜 마사지 정보를 찾고 계신가요? 현지인이 추천하는 공덕 마사지 숨은 맛집부터 가격 비교까지, 솔직한 후기와 함께 알려드립니다.">
+ <meta property="og:type" content="website">
+ <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ html {
+ scroll-behavior: smooth;
+ }
+ body {
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+ background-color: #0a0a0a;
+ color: #f5f5f0;
+ line-height: 1.6;
+ }
+ a {
+ color: #d4af37;
+ text-decoration: none;
+ transition: color 0.3s ease;
+ }
+ a:hover {
+ color: #e8c54a;
+ }
+ img {
+ max-width: 100%;
+ height: auto;
+ display: block;
+ }
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 20px;
+ }
+ header {
+ background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+ border-bottom: 1px solid #2a2a2a;
+ position: sticky;
+ top: 0;
+ z-index: 1000;
+ padding: 10px 0;
+ }
+ header .container {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+ .logo {
+ font-size: 1.8rem;
+ font-weight: 700;
+ letter-spacing: 2px;
+ color: #d4af37;
+ }
+ .logo span {
+ color: #f5f5f0;
+ font-weight: 300;
+ }
+ nav ul {
+ list-style: none;
+ display: flex;
+ gap: 30px;
+ }
+ nav a {
+ font-size: 0.95rem;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ color: #b0b0b0;
+ padding: 5px 0;
+ border-bottom: 2px solid transparent;
+ transition: all 0.3s ease;
+ }
+ nav a:hover {
+ color: #d4af37;
+ border-bottom-color: #d4af37;
+ }
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ cursor: pointer;
+ gap: 5px;
+ }
+ .hamburger span {
+ width: 30px;
+ height: 3px;
+ background-color: #d4af37;
+ border-radius: 2px;
+ transition: all 0.3s ease;
+ }
+ @media (max-width: 768px) {
+ .hamburger {
+ display: flex;
+ }
+ nav ul {
+ display: none;
+ flex-direction: column;
+ position: absolute;
+ top: 60px;
+ left: 0;
+ right: 0;
+ background-color: #1a1a1a;
+ padding: 20px;
+ gap: 15px;
+ border-bottom: 1px solid #2a2a2a;
+ }
+ nav ul.active {
+ display: flex;
+ }
+ .hero h1 {
+ font-size: 2rem !important;
+ }
+ .hero p {
+ font-size: 1rem !important;
+ }
+ }
+ .hero {
+ background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%231a1a1a" width="1200" height="600"/><circle cx="200" cy="300" r="150" fill="%23d4af37" opacity="0.05"/><circle cx="1000" cy="150" r="200" fill="%23d4af37" opacity="0.03"/></svg>') center/cover no-repeat;
+ padding: 100px 0 60px;
+ text-align: center;
+ position: relative;
+ }
+ .hero::before {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: linear-gradient(180deg, rgba(10,10,10,0.3) 0%, rgba(10,10,10,0.8) 100%);
+ }
+ .hero .container {
+ position: relative;
+ z-index: 1;
+ }
+ .hero h1 {
+ font-size: 3.5rem;
+ font-weight: 700;
+ color: #d4af37;
+ margin-bottom: 20px;
+ letter-spacing: 3px;
+ }
+ .hero p {
+ font-size: 1.3rem;
+ color: #c0c0c0;
+ max-width: 700px;
+ margin: 0 auto 30px;
+ }
+ .section {
+ padding: 80px 0;
+ }
+ .section-title {
+ font-size: 2.2rem;
+ font-weight: 700;
+ color: #d4af37;
+ text-align: center;
+ margin-bottom: 50px;
+ letter-spacing: 2px;
+ }
+ .card-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ gap: 30px;
+ }
+ .card {
+ background: #1a1a1a;
+ border: 1px solid #2a2a2a;
+ border-radius: 8px;
+ padding: 30px;
+ transition: all 0.3s ease;
+ }
+ .card:hover {
+ border-color: #d4af37;
+ transform: translateY(-5px);
+ box-shadow: 0 10px 30px rgba(212, 175, 55, 0.1);
+ }
+ .card h3 {
+ font-size: 1.4rem;
+ color: #d4af37;
+ margin-bottom: 15px;
+ }
+ .card p {
+ color: #b0b0b0;
+ margin-bottom: 10px;
+ }
+ .card .price {
+ font-size: 1.2rem;
+ color: #e8c54a;
+ font-weight: 600;
+ }
+ .faq-section {
+ background: #111;
+ padding: 80px 0;
+ }
+ .faq-item {
+ background: #1a1a1a;
+ border: 1px solid #2a2a2a;
+ border-radius: 8px;
+ padding: 20px 30px;
+ margin-bottom: 15px;
+ }
+ .faq-item h4 {
+ font-size: 1.1rem;
+ color: #d4af37;
+ margin-bottom: 8px;
+ }
+ .faq-item p {
+ color: #c0c0c0;
+ }
+ .tel-link {
+ display: inline-block;
+ background: #d4af37;
+ color: #0a0a0a;
+ padding: 12px 30px;
+ border-radius: 50px;
+ font-weight: 700;
+ font-size: 1.1rem;
+ transition: all 0.3s ease;
+ margin-top: 20px;
+ }
+ .tel-link:hover {
+ background: #e8c54a;
+ color: #0a0a0a;
+ transform: scale(1.05);
+ }
+ .info-block {
+ background: #1a1a1a;
+ border: 1px solid #2a2a2a;
+ border-radius: 8px;
+ padding: 40px;
+ margin-bottom: 40px;
+ }
+ .info-block h3 {
+ font-size: 1.6rem;
+ color: #d4af37;
+ margin-bottom: 20px;
+ }
+ .info-block p {
+ color: #c0c0c0;
+ margin-bottom: 15px;
+ }
+ .info-block ul {
+ list-style: none;
+ padding: 0;
+ }
+ .info-block ul li {
+ color: #b0b0b0;
+ padding: 8px 0;
+ padding-left: 20px;
+ position: relative;
+ }
+ .info-block ul li::before {
+ content: '•';
+ color: #d4af37;
+ position: absolute;
+ left: 0;
+ }
+ .highlight-text {
+ color: #e8c54a;
+ font-weight: 600;
+ }
+ footer {
+ background: #0d0d0d;
+ border-top: 1px solid #2a2a2a;
+ padding: 30px 0;
+ text-align: center;
+ }
+ footer p {
+ color: #666;
+ font-size: 0.9rem;
+ }
+ </style>
   <meta property="og:url" content="https://gongdeok-body-tip.namanavi.com/about.html">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">공덕<span>마사지</span></div>
-            <nav>
-                <ul>
-                    <li><a href="/">홈</a></li>
-                    <li><a href="/info">정보</a></li>
-                    <li><a href="/review">후기</a></li>
-                    <li><a href="/price">가격</a></li>
-                    <li><a href="/contact">문의</a></li>
-                </ul>
-            </nav>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </header>
+ <header>
+ <div class="container">
+ <div class="logo">공덕<span>마사지</span></div>
+ <nav>
+ <ul>
+ <li><a href="/">홈</a></li>
+ <li><a href="/info">정보</a></li>
+ <li><a href="/review">후기</a></li>
+ <li><a href="/price">가격</a></li>
+ <li><a href="/contact">문의</a></li>
+ </ul>
+ </nav>
+ <div class="hamburger">
+ 
+ 
+ 
+ </div>
+ </div>
+ </header>
 
 <main>
 <section class="hero">
-  <div class="container">
-    <h1>공덕 마사지 정보 가이드</h1>
-    <p>이 페이지는 특정 업체를 홍보하는 광고가 아니라, 공덕 지역에서 마사지 업소를 이용할 때 참고할 수 있는 일반적인 정보를 정리한 안내 자료입니다.</p>
-  </div>
+ <div class="container">
+ <h1>공덕 마사지 정보 가이드</h1>
+ <p>이 페이지는 특정 업체를 홍보하는 광고가 아니라, 공덕 지역에서 마사지 업소를 이용할 때 참고할 수 있는 일반적인 정보를 정리한 안내 자료입니다.</p>
+ </div>
 </section>
 
 <section class="section">
-  <div class="container">
-    <h2 class="section-title">공덕 지역 특성</h2>
-    <p>공덕은 공덕역을 중심으로 오피스와 주거 지역이 함께 형성되어 있어, 퇴근 이후 시간대에 마사지 업소를 찾는 이용자가 많은 편입니다. 지역 내 업소마다 운영 방식과 코스 구성이 다르므로, 방문 전 기본적인 정보를 알아 두는 것이 도움이 됩니다.</p>
-  </div>
+ <div class="container">
+ <h2 class="section-title">공덕 지역 특성</h2>
+ <p>공덕은 공덕역을 중심으로 오피스와 주거 지역이 함께 형성되어 있어, 퇴근 이후 시간대에 마사지 업소를 찾는 이용자가 많은 편입니다. 지역 내 업소마다 운영 방식과 코스 구성이 다르므로, 방문 전 기본적인 정보를 알아 두는 것이 도움이 됩니다.</p>
+ </div>
 </section>
 
 <section class="section">
-  <div class="container card-grid">
-    <div class="card">
-      <h3>코스 구성</h3>
-      <p>코스는 보통 부위별 관리 시간과 관리 방식에 따라 구분되며, 업소마다 명칭과 구성이 다를 수 있습니다.</p>
-    </div>
-    <div class="card">
-      <h3>이용 시간</h3>
-      <p>기본 코스 시간이 정해져 있으며, 시간을 연장할 경우 추가 비용이 발생할 수 있습니다.</p>
-    </div>
-    <div class="card">
-      <h3>예약 방법</h3>
-      <p>전화 문의를 통해 원하는 시간대와 코스를 사전에 확인하는 것이 일반적입니다.</p>
-    </div>
-  </div>
+ <div class="container card-grid">
+ <div class="card">
+ <h3>코스 구성</h3>
+ <p>코스는 보통 부위별 관리 시간과 관리 방식에 따라 구분되며, 업소마다 명칭과 구성이 다를 수 있습니다.</p>
+ </div>
+ <div class="card">
+ <h3>이용 시간</h3>
+ <p>기본 코스 시간이 정해져 있으며, 시간을 연장할 경우 추가 비용이 발생할 수 있습니다.</p>
+ </div>
+ <div class="card">
+ <h3>예약 방법</h3>
+ <p>전화 문의를 통해 원하는 시간대와 코스를 사전에 확인하는 것이 일반적입니다.</p>
+ </div>
+ </div>
 </section>
 
 <section class="section info-block">
-  <div class="container">
-    <h2 class="section-title">가격이 결정되는 구조</h2>
-    <p class="price">마사지 요금은 코스 종류, 관리 시간, 관리사 지정 여부 등에 따라 달라지며, 업소별로 기준이 다르므로 정확한 금액은 방문 전 문의를 통해 확인하는 것이 가장 정확합니다.</p>
-    <p class="highlight-text">동일한 코스명이라도 업소에 따라 구성이 다를 수 있으므로, 예약 시 세부 구성을 함께 확인하는 것을 권장합니다.</p>
-  </div>
+ <div class="container">
+ <h2 class="section-title">가격이 결정되는 구조</h2>
+ <p class="price">마사지 요금은 코스 종류, 관리 시간, 관리사 지정 여부 등에 따라 달라지며, 업소별로 기준이 다르므로 정확한 금액은 방문 전 문의를 통해 확인하는 것이 가장 정확합니다.</p>
+ <p class="highlight-text">동일한 코스명이라도 업소에 따라 구성이 다를 수 있으므로, 예약 시 세부 구성을 함께 확인하는 것을 권장합니다.</p>
+ </div>
 </section>
 
 <section class="section">
-  <div class="container">
-    <h2 class="section-title">용어 정리</h2>
-    <dl>
-      <dt>코스</dt><dd>관리 부위와 시간에 따라 구분되는 이용 단위</dd>
-      <dt>지정</dt><dd>특정 관리사를 선택해서 이용하는 방식</dd>
-      <dt>연장</dt><dd>기본 코스 시간 이후 추가로 이용 시간을 늘리는 것</dd>
-    </dl>
-  </div>
+ <div class="container">
+ <h2 class="section-title">용어 정리</h2>
+ <dl>
+ <dt>코스</dt><dd>관리 부위와 시간에 따라 구분되는 이용 단위</dd>
+ <dt>지정</dt><dd>특정 관리사를 선택해서 이용하는 방식</dd>
+ <dt>연장</dt><dd>기본 코스 시간 이후 추가로 이용 시간을 늘리는 것</dd>
+ </dl>
+ </div>
 </section>
 
 <section class="section">
-  <div class="container">
-    <h2 class="section-title">방문 전 체크리스트</h2>
-    <ul>
-      <li>희망 코스와 시간을 미리 정해 두기</li>
-      <li>관리사 지정 가능 여부를 사전에 확인하기</li>
-      <li>영업시간과 마감 시각을 미리 확인하기</li>
-      <li>정확한 이용 요금은 예약 시 함께 확인하기</li>
-    </ul>
-  </div>
+ <div class="container">
+ <h2 class="section-title">방문 전 체크리스트</h2>
+ <ul>
+ <li>희망 코스와 시간을 미리 정해 두기</li>
+ <li>관리사 지정 가능 여부를 사전에 확인하기</li>
+ <li>영업시간과 마감 시각을 미리 확인하기</li>
+ <li>정확한 이용 요금은 예약 시 함께 확인하기</li>
+ </ul>
+ </div>
 </section>
 
 <section class="faq-section">
-  <div class="container">
-    <h2 class="section-title">자주 묻는 질문</h2>
-    <div class="faq-item">
-      <p><strong>Q. 예약 없이 방문해도 되나요?</strong></p>
-      <p>업소에 따라 당일 이용이 가능한 경우도 있지만, 원하는 시간대에 이용하려면 사전 예약이 도움이 됩니다.</p>
-    </div>
-    <div class="faq-item">
-      <p><strong>Q. 코스 시간은 어느 정도인가요?</strong></p>
-      <p>코스별로 기본 관리 시간이 다르게 책정되어 있으며, 업소마다 세부 구성이 다르므로 예약 시 확인이 필요합니다.</p>
-    </div>
-    <div class="faq-item">
-      <p><strong>Q. 정확한 요금은 어디서 확인하나요?</strong></p>
-      <p>요금은 코스와 시간 구성에 따라 달라지므로 방문 예정일 기준으로 전화 문의를 통해 확인하는 것이 가장 정확합니다.</p>
-    </div>
-  </div>
+ <div class="container">
+ <h2 class="section-title">자주 묻는 질문</h2>
+ <div class="faq-item">
+ <p><strong>Q. 예약 없이 방문해도 되나요?</strong></p>
+ <p>업소에 따라 당일 이용이 가능한 경우도 있지만, 원하는 시간대에 이용하려면 사전 예약이 도움이 됩니다.</p>
+ </div>
+ <div class="faq-item">
+ <p><strong>Q. 코스 시간은 어느 정도인가요?</strong></p>
+ <p>코스별로 기본 관리 시간이 다르게 책정되어 있으며, 업소마다 세부 구성이 다르므로 예약 시 확인이 필요합니다.</p>
+ </div>
+ <div class="faq-item">
+ <p><strong>Q. 정확한 요금은 어디서 확인하나요?</strong></p>
+ <p>요금은 코스와 시간 구성에 따라 달라지므로 방문 예정일 기준으로 전화 문의를 통해 확인하는 것이 가장 정확합니다.</p>
+ </div>
+ </div>
 </section>
 
 <section class="section">
-  <div class="container">
-    <h2 class="section-title">문의 안내</h2>
-    <p>공덕 마사지 이용에 대한 문의는 아래 연락처로 가능합니다.</p>
-    <a class="tel-link" href="tel:01062790862">01062790862</a>
-  </div>
+ <div class="container">
+ <h2 class="section-title">문의 안내</h2>
+ <p>공덕 마사지 이용에 대한 문의는 아래 연락처로 가능합니다.</p>
+ 
+ </div>
 </section>
 </main>
 
